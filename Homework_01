@@ -1,0 +1,58 @@
+
+#
+short_edge=int(input('sEdge:'))
+long_edge=int(input('lEdge:'))
+area=short_edge*long_edge
+premiter=(short_edge+long_edge)*2
+
+print(f'{area}')
+print(f'premiter:{premiter}')
+
+
+#ucgenin cevresini ve alanini hesepla
+edge=int(input('Edge:'))
+height=int(input('Height'))
+area=(edge*height)/2
+premiter=(edge)*3
+
+print(f'{area}')
+print(f'premiter:{premiter}')
+
+
+#airenin alanini ve cevresini hasaplayin
+r=int(input('r:'))
+premiter=2*3.14*r
+area=(3.14*(r*r))
+
+print(f'{area}')
+print(f'premiter:{premiter}')
+
+
+#Birinci dereceden 2 bilinmeyenli deklem hesaplayin
+#3x+2y=5
+#x-y=1
+
+a1=int(input('A1:'))
+a2=int(input('A2:'))
+b1=int(input('B1:'))
+b2=int(input('B2:'))
+c1=int(input('C1:'))
+c2=int(input('C2:'))
+
+determinant=a1*b2-a2*b1
+
+if determinant==0:
+    print('NO')
+else:
+    a=(c1*b2-c2*b1)/determinant
+    b= (a1 * c2 - a2 * c1) / determinant
+
+    print(f'a:{a}')
+    print(f'b:{b}')
+
+
+#silindirin hacmini hesaplayin
+r=int(input('radius:'))
+height=int(input('Height'))
+volume=3.14*r**2*height
+print(f'volume:{volume}')
