@@ -1,0 +1,80 @@
+#Python da karar mekanizmalarini olusturmak icin if - elif - else bloklari yada mach - case bloclari kullanilir.
+
+
+x=int(input('Tam Sayi:'))
+
+sonuc = x% 2 #bir sayinin 2 ye bolumunden kalani bulmak istiyorsak mod islemini yapiyoruz. phyton da mod icin "%" sembolu kullanilir
+
+if sonuc ==0:
+    print(f'{x} ciftir..!')
+else:
+    print(f'{x}tektir..!')
+
+#kullanicidan alinan bir sayi pozitif mi negatif mi notr mu
+
+number=int(input('NUMBER:'))
+
+if number>0:
+    print(f'pozitif')
+elif number<0:
+    print(f'negatif')
+elif number==0:
+    print(f'notr')
+
+#kullanicidan 1. sinav, 2. sinav ve odev notlarini alalim.1 ve 2 yuzde 40%; odev yuzde 20%. Eger ortalama 50% den buyuk ise ge degil ise kal yaz.
+
+exam_1 = float(input('Exam_1:'))
+exam_2 = float(input('Exam_2:'))
+home_work= float(input('Homework:'))
+
+avg=exam_1*0.4+exam_2*0.4+home_work*0.2
+
+if avg> 50:
+    print('gectiniz')
+else:
+    print('kaldiniz')
+
+#kullanicidan 2 adet sayi al ve buyuk olani ekrana yazdir
+
+Number1=int(input('Number1:'))
+Number2=int(input('Number2:'))
+
+if Number1>Number2:
+    print('Buyuk sayi:',Number1)
+elif Number1<Number2:
+    print('Buyuk sayi:',Number2)
+else:
+    print('2 sayi esit:')
+
+#kullanicidan mevsim al ve mevsimin icinde olan aylari ekrana yaz
+
+mevsim=input('mevsim giriniz:')
+
+if mevsim=='kis':
+    print('Aralik-Ocak-Subat')
+elif mevsim=='ilk bahar':
+    print('Mart-Nisan-Mayis')
+elif mevsim=='yaz':
+    print('Haziran-Temmuz-Agustos')
+elif mevsim=='son bahar':
+    print('Eylul-Ekim-Kasim')
+else:
+    print('Hatali bilgi girildi')
+
+#kullanicinin username ini alip hos geldin... hos geldin yazin  eger kullanicinin username i degilse ciktisini versin
+
+Username=(input('USERNAME:'))
+
+if Username=='caesar':
+    print('Welcome CAESAR')
+else:
+    print('No')
+
+#yas 18 den buyuk ise olur olmazsa olmaz
+
+Age=int(input('PLEASE TYPE YOU AGE:'))
+
+if Age>18:
+    print('WELCOME')
+else:
+    print('YOU ARE NOT ALLOWED IN HERE')
